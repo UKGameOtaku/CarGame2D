@@ -7,13 +7,11 @@ public class Driver : MonoBehaviour
     [SerializeField]float steerSpeed = 200f;
     [SerializeField]float moveSpeed = 10f;
 
-    void Start()
-    {
+    void Start(){
 
     }
 
-    void Update()
-    {
+    void Update(){
         float steerAmount = Input.GetAxis("Horizontal")*steerSpeed;
         float moveAmount = Input.GetAxis("Vertical")*moveSpeed;
 
